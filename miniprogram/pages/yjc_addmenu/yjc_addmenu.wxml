@@ -1,0 +1,70 @@
+<!--miniprogram/pages/yjc_addmenu/yjc_addmenu.wxml-->
+<rui-datepicker id="ruiDatepicker" bindconfirm="dateConfirm" targetDate="{{targetDate}}" isLunar="{{isLunar}}"></rui-datepicker>
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <!-- 事件名 -->
+    <view class="item">
+      <!-- <view class="item__icon">
+        <text class="iconfont icon_description"></text>
+      </view> -->
+      <view class="item__container">
+        <input class="item__input" placeholder="输入菜品名" type="text" focus="true" value="{{title}}" bindconfirm="bindTitleConfirm" placeholder-style="color: #999" name="title"></input>
+      </view>
+    </view>
+    <!-- 介绍 -->
+    <view class="item_intro">
+      <!-- <view class="item__icon">
+        <text class="iconfont icon_description"></text>
+      </view> -->
+      <view class="item__container">
+        <input class="item__input" placeholder="输入菜品简介" type="text" focus="true" value="{{title}}" bindconfirm="bindTitleConfirm" placeholder-style="color: #999" name="content"></input>
+      </view>
+    </view>
+    <!-- 介绍 -->
+    <view class="item_intro">
+      <!-- <view class="item__icon">
+        <text class="iconfont icon_description"></text>
+      </view> -->
+      <view class="item__container">
+        <input class="item__input" placeholder="输入菜品配料" type="text" focus="true" value="{{title}}" bindconfirm="bindTitleConfirm" placeholder-style="color: #999" name="content"></input>
+      </view>
+    </view>
+    
+    <view class="item">
+      <view class="item__container">
+        <view class='buzhou'>制作步骤</view>
+      </view>
+    </view>
+
+    <block wx:for="{{lists}}" wx:key="{{index}}">
+      <view class="item">
+      <!-- <view class="item__icon">
+        <text class="iconfont icon_description"></text>
+      </view> -->
+      <view class="item__container">
+        <input class="item__input" placeholder="步骤{{index+1}}" type="text" focus="true" value="{{title}}" bindconfirm="bindTitleConfirm" placeholder-style="color: #999" name="title"></input>
+      </view>
+    </view>
+    </block> 
+    <text class='add-li' bindtap='addList'>添加步骤</text>
+    <text class='add-li' bindtap='delList' style="float:right">删除步骤</text>
+
+    <view style="padding-top:60rpx;padding-left:25%">
+      <van-uploader
+        file-list="{{ fileList }}"
+        max-count="1"
+        bind:after-read="afterRead"
+        wx:if="{{!showimage}}"
+      />
+      <view>\n\n\n</view>
+      <image src='{{tempimg}}' wx:if="{{showimage}}" style="align-items: center;"></image>
+    </view>
+
+    <button formType="submit" class="btn-submit">保存</button>
+  </form>
+  </view>
+
+  <view>
+
+</view>
+
