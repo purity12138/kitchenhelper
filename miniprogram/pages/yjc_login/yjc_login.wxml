@@ -1,9 +1,0 @@
-<!--miniprogram/pages/yjc_login/yjc_login.wxml-->
-<!--<text>miniprogram/pages/yjc_login/yjc_login.wxml</text>-->
-<view class="container">
-  <image src='./logo.jpg'></image>
-
-  <view  class='startContainer' bindtap="handleTap">
-    <van-button  type="info">欢迎进入！</van-button>
-  </view>
-</view>
