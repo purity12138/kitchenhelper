@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "单品",
+  "usingComponents":{
+  
+    "van-button":"@vant/weapp/button/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-steps": "@vant/weapp/steps/index",
+    "van-divider": "@vant/weapp/divider/index"
+   }
+  }
