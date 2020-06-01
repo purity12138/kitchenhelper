@@ -1,38 +1,22 @@
 {
   "pages": [
-    "pages/yjc_test/yjc_test",
-    "pages/yjc_testYuyin/yjc_testYuyin",
-    "pages/yjc_addmenu/yjc_addmenu",
-    "pages/yjc_login/yjc_login",
-    "pages/yjc_search/yjc_search",
-    "pages/yjc_primarypage/yjc_primarypage",
     "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/zjb_user/zjb_user"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "厨房小帮手",
+    "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2",
-  "plugins": {
-    "WechatSI": {
-      "version": "0.3.0",
-      "provider": "wx069ba97219f66d99"
-    }
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-divider": "@vant/weapp/divider/index"
   }
 }
