@@ -1,0 +1,37 @@
+<view class="main">
+  <!--图片-->
+  <view class="food_image">
+    <van-image  width="100%" fit="widthFix" src="{{imgurl}}" />
+  </view>
+  <!--其他信息-->
+  <view class="other_info">
+    <van-tag type="danger" size="large" color="#7232dd">{{foodName}}</van-tag>
+    <view class="other_detail">
+      <view>
+        <van-tag type="success">类别：{{tag}}</van-tag>
+      </view>
+      <view>
+        <van-tag type="success">浏览量：{{views}}</van-tag>
+      </view>
+      <view>
+        <van-tag type="success">点赞数：{{praise}}</van-tag>
+      </view>
+    </view>
+  </view>
+  <!--分隔线-->
+  <van-divider />
+  <!--具体制作步骤-->
+  <view>
+    <view>
+      <van-button round type="info" bind:click="buttonclick"  class="voice">语音播报</van-button>
+      <van-button round type="info" bind:click="buttonclick">下一步</van-button>
+    </view>
+    <!--步骤条-->
+    <van-steps
+      steps="{{ steps }}"
+      active="{{ activenum }}"
+      direction="vertical"
+      active-color="green"
+    />
+  </view>
+</view>
