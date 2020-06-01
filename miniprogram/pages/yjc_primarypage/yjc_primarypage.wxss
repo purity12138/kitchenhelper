@@ -1,0 +1,47 @@
+/* miniprogram/pages/yjc_primarypage/yjc_primarypage.wxss */
+/* .category image{
+  width:70rpx;
+  height:70rpx;
+} */
+
+/*分类*/
+
+.category {
+  width: 100%;
+  padding: 36rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.category view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding:10rpx 24rpx;
+}
+
+.category image {
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.category text {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.mrtj{
+  font-size: 35rpx;
+  color: black;
+  margin-left: 15px;
+}
+.ckgd{
+  font-size: 28rpx;
+  color: #666;
+  float: right;
+  margin-right: 20px;
+}
+/* 猜你喜欢 */
+
