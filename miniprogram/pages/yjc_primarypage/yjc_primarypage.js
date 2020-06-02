@@ -48,8 +48,19 @@ Page({
       active: 'https://img.yzcdn.cn/vant/user-active.png',
     },
   },
+  gotosmw(event){
+    wx.navigateTo({
+      url: '../smw_sort/smw_sort'
+    })
+  },
   onChange(event) {
     this.setData({ active: event.detail });
+    console.log(event)
+    if(event.detail==1){
+      wx.switchTab({  
+        url:'../b/b'          
+      });  
+    }
   },
   onReady(){
       loadingHidden: false

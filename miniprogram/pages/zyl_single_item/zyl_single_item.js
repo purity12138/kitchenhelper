@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgurl:"/MyImages/niupai.jpg",
+    imgurl:"/images/yjc/wu.png",
     foodName:"牛排",
     tag:"肉",
     views:5000,

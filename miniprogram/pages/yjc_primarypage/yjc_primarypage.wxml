@@ -35,7 +35,7 @@
   <van-sidebar-item title="标签名" />
 </van-sidebar> -->
 
-<van-tabbar active="{{ active }}" bind:change="onChange">
+<!-- <van-tabbar active="{{ active }}" bind:change="onChange">
   <van-tabbar-item info="3">
     <image
       slot="icon"
@@ -53,13 +53,13 @@
   </van-tabbar-item>
   <van-tabbar-item icon="search">添加菜谱</van-tabbar-item>
   <van-tabbar-item icon="setting-o">我的</van-tabbar-item>
-</van-tabbar>
+</van-tabbar> -->
 
 <!-- <van-loading size="24px" vertical>菜谱生成中...</van-loading> -->
 <view class='like'>
     <view class='title'>
       <text class="mrtj">每日推荐</text>
-      <text class="ckgd">查看更多</text>
+      <text class="ckgd" bindtap="gotosmw">查看更多</text>
       <!-- <van-icon name="bars" size="70px" style=""/> -->
     </view>
     <view class="list">

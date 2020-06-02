@@ -1,22 +1,54 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/zjb_user/zjb_user"
+    "pages/yjc_primarypage/yjc_primarypage",
+    "pages/zjb_user/zjb_user", 
+    "pages/zyl_single_item/zyl_single_item",
+    "pages/smw_sort/smw_sort",       
+    "pages/yjc_test/yjc_test",
+    "pages/yjc_testYuyin/yjc_testYuyin",
+    "pages/yjc_addmenu/yjc_addmenu",
+    "pages/yjc_login/yjc_login",
+    "pages/yjc_search/yjc_search",    
+    "pages/index/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "厨房小帮手",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#455AC0",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/yjc_primarypage/yjc_primarypage",
+        "iconPath": "images/yjc/index.png",
+        "selectedIconPath": "images/yjc/index_select.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/yjc_addmenu/yjc_addmenu",
+        "iconPath": "images/yjc/index.png",
+        "selectedIconPath": "images/yjc/index_select.png",
+        "text": "添加菜谱"
+      },
+      {
+        "pagePath": "pages/zjb_user/zjb_user",
+        "iconPath": "images/yjc/index.png",
+        "selectedIconPath": "images/yjc/index_select.png",
+        "text": "我的"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json",
-  "usingComponents": {
-    "van-button": "@vant/weapp/button/index",
-    "van-icon": "@vant/weapp/icon/index",
-    "van-cell": "@vant/weapp/cell/index",
-    "van-cell-group": "@vant/weapp/cell-group/index",
-    "van-image": "@vant/weapp/image/index",
-    "van-divider": "@vant/weapp/divider/index"
+  "style": "v2",
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.0",
+      "provider": "wx069ba97219f66d99"
+    }
   }
 }

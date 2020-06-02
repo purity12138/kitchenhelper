@@ -1,0 +1,27 @@
+<!--miniprogram/pages/yjc_search/yjc_search.wxml-->
+<view class='nav'>
+    <view wx:for="{{nav}}" wx:key='{{index}}' data-tags='{{item.id}}' data-content='{{item.name}}' bindtap='navTap'>
+      <image src='{{item.img}}' mode='aspectFit'></image> 
+      <view class="{{ curIndex === item.id ? 'txt' : ''}}" data-id="{{item.id}}" bindtap="navTap">{{item.title}}</view>
+    </view>
+</view>
+
+
+<van-search
+  value="{{ value }}"
+  input-align="center"
+  placeholder="请输入搜索关键词"
+/>
+
+
+<scroll-view>
+  <block wx:for="{{list}}" wx:key="key">
+    <block wx:if="{{curNav == item.type }}">
+      <view class='msg'>
+        <text class='name'>{{item.name}}</text>    
+
+      </view>
+      <image src='{{item.img}}' mode='aspectFit'></image> 
+    </block>
+  </block>
+</scroll-view>

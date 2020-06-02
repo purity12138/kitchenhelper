@@ -1,7 +1,7 @@
 <view class="main">
   <!--图片-->
   <view class="food_image">
-    <van-image  width="100%" fit="widthFix" src="{{imgurl}}" />
+    <van-image width="100%" fit="widthFix" src="{{imgurl}}" />
   </view>
   <!--其他信息-->
   <view class="other_info">
